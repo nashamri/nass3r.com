@@ -35,3 +35,4 @@ DEFAULT_PAGINATION = 4
 TYPOGRIFY = True
 THEME = "../lannisport"
 SITELOGO = "img/site-logo.png"
+STATIC_PATHS = ["images", ]

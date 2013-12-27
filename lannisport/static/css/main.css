@@ -351,3 +351,7 @@ cite {direction: ltr; unicode-bidi: embed; }
 /* Allow manual direction override by class directive and roles */
 .rtl { direction: rtl; text-align: right; }
 .ltr { direction: ltr; }
+
+article img {
+    margin: 10px;
+}
