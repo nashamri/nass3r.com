@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   inkscape:export-filename="/home/siovene/code/lannisport/static/img/divider.png"
+   inkscape:export-xdpi="67.224915"
+   inkscape:export-ydpi="67.224915"
+   sodipodi:docname="divider.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.379058"
+     inkscape:cx="260.75316"
+     inkscape:cy="580.21054"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="-4"
+     inkscape:window-y="-3"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#cccccc;stroke-width:0.84283745;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 113.49289,470.90672 103.54868,0"
+       id="path2985"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:type="star"
+       style="fill:#f37a93;fill-opacity:0.47031962;stroke:none"
+       id="path2989"
+       sodipodi:sides="5"
+       sodipodi:cx="226.27417"
+       sodipodi:cy="462.43311"
+       sodipodi:r1="16.146151"
+       sodipodi:r2="6.5331848"
+       sodipodi:arg1="0.36212441"
+       sodipodi:arg2="0.99044294"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 241.37318,468.15307 -11.51674,-0.25646 -4.35643,10.66408 -3.31495,-11.03233 -11.48836,-0.84782 9.46799,-6.56189 -2.74377,-11.18807 9.16649,6.97685 9.79262,-6.06677 -3.80278,10.87382 z"
+       inkscape:transform-center-x="-0.054537762"
+       inkscape:transform-center-y="-0.763709"
+       transform="matrix(0.11743324,-0.43255173,0.43255173,0.11743324,20.201356,515.06317)" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path2991"
+       d="m 277.24414,470.90672 103.54864,0"
+       style="fill:none;stroke:#cccccc;stroke-width:0.84283745;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4223"
+       d="m 113.49289,469.82301 103.54868,0"
+       style="fill:none;stroke:#ffffff;stroke-width:0.84283745;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:0.84283745;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 277.24414,469.82301 103.54864,0"
+       id="path4225"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
