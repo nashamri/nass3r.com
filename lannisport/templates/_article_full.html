@@ -1,7 +1,13 @@
 {% extends '_article_base.html' %}
 
 {% block article_content %}
-    {{article.content}}
+    {% if article.lang == "ar" %}
+        <div dir="rtl">
+            {{article.content}}
+        </div>
+    {% else %}
+            {{article.content}}
+    {% endif %}
 {% endblock %}
 
 {% block article_footer %}

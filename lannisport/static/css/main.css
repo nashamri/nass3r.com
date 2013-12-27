@@ -338,3 +338,16 @@ blockquote p {
     font-style: italic;
     color: #777;
 }
+
+/* The next 3 rules are very useful in documents containing pieces
+ * of code in english */
+/* Use this if you all your literal blocks (::) are LTR */
+pre {direction: ltr; unicode-bidi: embed; }
+/* Use this if you all your inline literals (``) are LTR */
+tt {direction: ltr; unicode-bidi: embed; }
+/* Use this if you all your interpretted text (`) is LTR */
+cite {direction: ltr; unicode-bidi: embed; }
+
+/* Allow manual direction override by class directive and roles */
+.rtl { direction: rtl; text-align: right; }
+.ltr { direction: ltr; }
