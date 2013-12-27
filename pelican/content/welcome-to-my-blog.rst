@@ -4,6 +4,7 @@ Welcome to my blog
 :author: nasser
 :category: News
 :slug: welcome-to-my-blog
+:tags: news
 
 Hello cyber world!
 

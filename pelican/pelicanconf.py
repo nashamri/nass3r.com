@@ -3,8 +3,9 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Nasser'
-SITENAME = u'Nasser Blog'
-SITEURL = ''
+SITENAME = u"Nasser's Blog"
+SITETAGLINE = "42 is the answer!"
+SITEURL = 'http://localhost:8000'
 
 TIMEZONE = 'Europe/Paris'
 

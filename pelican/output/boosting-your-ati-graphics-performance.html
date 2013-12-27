@@ -6,23 +6,23 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Boosting your ati graphics performance / Nasser Blog</title>
+        <title>Boosting your ati graphics performance / Nasser's Blog</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="shortcut icon" href="/theme/favicon.ico" />
-        <link rel="apple-touch-icon" href="/theme/apple-touch-icon-iphone.png" />
-        <link rel="apple-touch-icon" sizes="72x72" href="/theme/apple-touch-icon-ipad.png" />
-        <link rel="apple-touch-icon" sizes="114x114" href="/theme/apple-touch-icon-iphone4.png" />
-        <link rel="apple-touch-icon" sizes="144x144" href="/theme/apple-touch-icon-ipad3.png" />
+        <link rel="shortcut icon" href="http://localhost:8000/theme/favicon.ico" />
+        <link rel="apple-touch-icon" href="http://localhost:8000/theme/apple-touch-icon-iphone.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="http://localhost:8000/theme/apple-touch-icon-ipad.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="http://localhost:8000/theme/apple-touch-icon-iphone4.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="http://localhost:8000/theme/apple-touch-icon-ipad3.png" />
 
-        <link rel="stylesheet" href="/theme/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/theme/css/bootstrap-responsive.min.css">
-        <link rel="stylesheet" href="/theme/css/colorbox.css">
+        <link rel="stylesheet" href="http://localhost:8000/theme/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://localhost:8000/theme/css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="http://localhost:8000/theme/css/colorbox.css">
 
-        <link rel="stylesheet" href="/theme/css/main.css">
+        <link rel="stylesheet" href="http://localhost:8000/theme/css/main.css">
 
-        <script src="/theme/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="http://localhost:8000/theme/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -34,9 +34,9 @@
                 <div class="span8">
                     <header id="site-header">
                         <h1>
-                            <a href="">Nasser Blog</a>
+                            <a href="http://localhost:8000">Nasser's Blog</a>
                             <small>
-                                <span class="divider">/</span> 
+                                <span class="divider">/</span> 42 is the answer!
                             </small>
                         </h1>
                         <p>
@@ -48,52 +48,51 @@
 <section>
     <article>
         <header>
-            <h2><a href="/boosting-your-ati-graphics-performance.html" rel="bookmark">Boosting your ati graphics&nbsp;performance</a></h2>
+            <h2><a href="http://localhost:8000/boosting-your-ati-graphics-performance.html" rel="bookmark">Boosting your ati graphics&nbsp;performance</a></h2>
             <time datetime="2012-10-06T20:31:00">Sat 06 October 2012</time>
         </header>
 
             <p>If you have an <span class="caps">ATI</span> graphics card (<span class="caps">ATI</span> Radeon <span class="caps">HD</span> 3000 series or newer)
 and using the open source driver you can get better performance by
-enabling <span class="caps">PCI</span>-E Gen2&nbsp;option.</p>
-<p>To enable this on Ubuntu 12.04, you must pass this boot parameter&nbsp;&quot;radeon.pcie_gen2=1&quot;.</p>
+enabling <span class="caps">PCI</span>-E Gen2 option.
+To enable this on Ubuntu 12.04, you must pass this boot&nbsp;parameter:</p>
+<pre class="code sh literal-block">
+radeon.pcie_gen2<span class="o">=</span>1
+</pre>
 <p>Here are the detailed&nbsp;steps:</p>
-<ol class="arabic">
-<li><p class="first">Run the following command in a terminal (use your favorite text
-editor&nbsp;ofc):</p>
-<div class="system-message">
-<p class="system-message-title">System Message: <span class="caps">ERROR</span>/3 (<tt class="docutils">/home/nasser/Projects/nass3r.com/pelican/content/boosting-your-ati-graphics-performance.rst</tt>, line&nbsp;20)</p>
-<p>Unexpected&nbsp;indentation.</p>
-</div>
-<blockquote>
-<p><tt class="docutils literal">sudo vim /etc/default/grub</tt></p>
-</blockquote>
-</li>
-<li><dl class="first docutils">
-<dt>Change the line that&nbsp;says:</dt>
-<dd><p class="first last"><tt class="docutils literal"><span class="pre">GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet</span> splash&quot;</tt>
-To
-<tt class="docutils literal"><span class="pre">GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet</span> splash radeon.pcie_gen2=1&quot;</tt></p>
-</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Save the file and run the following&nbsp;command:</dt>
-<dd><p class="first last"><tt class="docutils literal">sudo <span class="pre">update-grub</span></tt></p>
-</dd>
-</dl>
-</li>
-<li><p class="first">Reboot and enjoy the butter smooth&nbsp;performance.</p>
-</li>
+<ol class="arabic simple">
+<li>Run the following command in a terminal (use your favorite text&nbsp;editor):</li>
+</ol>
+<pre class="code sh literal-block">
+sudo vim /etc/default/grub
+</pre>
+<ol class="arabic simple" start="2">
+<li>Change the line that&nbsp;says:</li>
+</ol>
+<pre class="code sh literal-block">
+<span class="nv">GRUB_CMDLINE_LINUX_DEFAULT</span><span class="o">=</span><span class="s2">&quot;quiet splash&quot;</span>
+</pre>
+<p>To</p>
+<pre class="code sh literal-block">
+<span class="nv">GRUB_CMDLINE_LINUX_DEFAULT</span><span class="o">=</span><span class="s2">&quot;quiet splash radeon.pcie_gen2=1&quot;</span>
+</pre>
+<ol class="arabic simple" start="3">
+<li>Save the file and run the following&nbsp;command:</li>
+</ol>
+<pre class="code sh literal-block">
+sudo update-grub
+</pre>
+<ol class="arabic simple" start="4">
+<li>Reboot and enjoy the butter smooth&nbsp;performance.</li>
 </ol>
 <p>I&#8217;m getting really great result while testing Elementary <span class="caps">OS</span> luna.
 Everything is so smooth and nice, Good job elementary team&nbsp;:)</p>
 
     <footer>
-        <p>Posted in: <a href="/category/linux.html">Linux</a></p>
-        <p>Tagged as: <a href="/tag/ati.html">ati</a> / <a href="/tag/elementary-os.html">Elementary OS</a> / <a href="/tag/linux.html">Linux</a> / <a href="/tag/radeon.html">radeon</a> / <a href="/tag/ubuntu.html">Ubuntu</a></p>
-        <p>Wanna tell me what you think? <a href="/">Get in touch.</a></p>
+        <p>Posted in: <a href="http://localhost:8000/category/linux.html">Linux</a></p>
+        <p>Tagged as: <a href="http://localhost:8000/tag/ati.html">ati</a> / <a href="http://localhost:8000/tag/elementary-os.html">elementary OS</a> / <a href="http://localhost:8000/tag/linux.html">Linux</a> / <a href="http://localhost:8000/tag/radeon.html">radeon</a> / <a href="http://localhost:8000/tag/ubuntu.html">ubuntu</a></p>
+        <p>Wanna tell me what you think? <a href="http://localhost:8000/">Get in touch.</a></p>
     </footer>
-        </footer>
     </article>
 </section>                    </div>
 
@@ -102,7 +101,7 @@ Everything is so smooth and nice, Good job elementary team&nbsp;:)</p>
                             <a href="" target="_blank">
                                 
                             </a> Nasser /
-                            <a href="/">Archives</a>
+                            <a href="http://localhost:8000/">Archives</a>
                         </p>
                         <p>
                             Powered by
@@ -129,8 +128,8 @@ Everything is so smooth and nice, Good job elementary team&nbsp;:)</p>
                         </div>
 
                         <div id="site-logo">
-                            <a href="">
-                                <img alt="Nasser Blog" src="/theme/img/site-logo.png" />
+                            <a href="http://localhost:8000">
+                                <img alt="Nasser's Blog" src="/theme/img/site-logo.png" />
                             </a>
                         </div>
 
@@ -141,9 +140,12 @@ Everything is so smooth and nice, Good job elementary team&nbsp;:)</p>
 		<li>
 			<ul>
 				<li>
-					<a href="">Blog</a>
+					<a href="http://localhost:8000">Blog</a>
 				</li>
 
+					<li>
+						<a href="http://localhost:8000/pages/about.html">About&nbsp;Me</a>
+					</li>
 			</ul>
 		</li>
 	</ul>
@@ -155,34 +157,22 @@ Everything is so smooth and nice, Good job elementary team&nbsp;:)</p>
 		<li>
 			<ul>
 					<li>
-						<a href="/category/android.html">Android</a>
+						<a href="http://localhost:8000/category/android.html">Android</a>
 					</li>
 					<li>
-						<a href="/category/arabic.html">Arabic</a>
+						<a href="http://localhost:8000/category/linux.html">Linux</a>
 					</li>
 					<li>
-						<a href="/category/linux.html">Linux</a>
+						<a href="http://localhost:8000/category/news.html">News</a>
 					</li>
 					<li>
-						<a href="/category/linux-paintings.html">Linux, Paintings</a>
+						<a href="http://localhost:8000/category/other.html">Other</a>
 					</li>
 					<li>
-						<a href="/category/math-programming.html">Math, Programming</a>
+						<a href="http://localhost:8000/category/paintings.html">Paintings</a>
 					</li>
 					<li>
-						<a href="/category/misc.html">misc</a>
-					</li>
-					<li>
-						<a href="/category/news.html">News</a>
-					</li>
-					<li>
-						<a href="/category/paintings.html">Paintings</a>
-					</li>
-					<li>
-						<a href="/category/uncategorized.html">Uncategorized</a>
-					</li>
-					<li>
-						<a href="/category/yeah.html">yeah</a>
+						<a href="http://localhost:8000/category/programming.html">Programming</a>
 					</li>
 			</ul>
 		</li>
@@ -194,14 +184,14 @@ Everything is so smooth and nice, Good job elementary team&nbsp;:)</p>
         </div> <!-- /container -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/theme/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="http://localhost:8000/theme/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 
         <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>
-        <script>$('body').popover || document.write('<script src="/theme/js/vendor/bootstrap.min.js"><\/script>')</script>
+        <script>$('body').popover || document.write('<script src="http://localhost:8000/theme/js/vendor/bootstrap.min.js"><\/script>')</script>
 
-        <script src="/theme/js/vendor/jquery.colorbox-min.js"></script>
+        <script src="http://localhost:8000/theme/js/vendor/jquery.colorbox-min.js"></script>
 
-        <script src="/theme/js/main.js"></script>
+        <script src="http://localhost:8000/theme/js/main.js"></script>
 
         <script>
             var _gaq=[['_setAccount',''],['_trackPageview']];

@@ -4,14 +4,16 @@ A penguin :)
 :author: nasser
 :category: Paintings
 :slug: a-penguin
+:tags: penguin, mypaint, paintings
 
 Just a fast painting of a cute penguin :)
 
-|image0|
+|penguin|
 
  
 
 Thanks Fares :)
 
-.. |image0| image:: http://www.nass3r.com/wp-uploads/2012/10/faresPenguin.png
-   :target: http://www.nass3r.com/wp-uploads/2012/10/faresPenguin.png
+.. |penguin| image:: {filename}images/faresPenguin.png
+   :target: {filename}images/faresPenguin.png
+   :alt: Fares penguin

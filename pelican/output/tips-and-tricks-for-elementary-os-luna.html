@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Tips and Tricks for elementary OS Luna / Nasser's Blog</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="shortcut icon" href="http://localhost:8000/theme/favicon.ico" />
+        <link rel="apple-touch-icon" href="http://localhost:8000/theme/apple-touch-icon-iphone.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="http://localhost:8000/theme/apple-touch-icon-ipad.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="http://localhost:8000/theme/apple-touch-icon-iphone4.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="http://localhost:8000/theme/apple-touch-icon-ipad3.png" />
+
+        <link rel="stylesheet" href="http://localhost:8000/theme/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://localhost:8000/theme/css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="http://localhost:8000/theme/css/colorbox.css">
+
+        <link rel="stylesheet" href="http://localhost:8000/theme/css/main.css">
+
+        <script src="http://localhost:8000/theme/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container">
+            <div class="row">
+                <div class="span8">
+                    <header id="site-header">
+                        <h1>
+                            <a href="http://localhost:8000">Nasser's Blog</a>
+                            <small>
+                                <span class="divider">/</span> 42 is the answer!
+                            </small>
+                        </h1>
+                        <p>
+                            
+                        </p>
+                    </header>
+
+                    <div class="content">
+<section>
+    <article>
+        <header>
+            <h2><a href="http://localhost:8000/tips-and-tricks-for-elementary-os-luna.html" rel="bookmark">Tips and Tricks for elementary <span class="caps">OS</span>&nbsp;Luna</a></h2>
+            <time datetime="2012-12-11T19:19:00">Tue 11 December 2012</time>
+        </header>
+
+            <p>After using Elementary <span class="caps">OS</span> as my main distro on my Desktop and my laptop
+for sometime, Here are some tips and tricks and small modifications that
+I have right&nbsp;now:</p>
+<p>Make sure you have dconf-editor installed you can do so by running this&nbsp;command:</p>
+<pre class="code sh literal-block">
+sudo apt-get install dconf-tools
+</pre>
+<div class="section" id="remove-ubuntu-overlay-scroll-bars">
+<h2>1. Remove ubuntu overlay scroll&nbsp;bars:</h2>
+<p>open dconf-editor then go to this&nbsp;path:</p>
+<pre class="code sh literal-block">
+org.gnome.desktop.interface
+</pre>
+<p>And uncheck the ubuntu-overlay-scrollbars&nbsp;entry.</p>
+</div>
+<div class="section" id="silencing-the-bell">
+<h2>2. Silencing the&nbsp;bell:</h2>
+<p>This for muting that annoying sound when you try to auto-complete
+something in the terminal and nothing matches. Go to this path with&nbsp;dconf-editor:</p>
+<pre class="code sh literal-block">
+org.gnome.desktop.wm.preferences
+</pre>
+<p>And uncheck the audible-bell&nbsp;entry.</p>
+</div>
+<div class="section" id="modify-the-dock">
+<h2>3. Modify the&nbsp;dock:</h2>
+<p>I like to have the indicators on so I can know whether a program is
+running or not.
+To do so, open up this file with your favorite text&nbsp;editor:</p>
+<pre class="code sh literal-block">
+~/.config/plank/theme/dock.theme
+</pre>
+<p>And change this&nbsp;line:</p>
+<pre class="code sh literal-block">
+<span class="nv">IndicatorSize</span><span class="o">=</span>5
+</pre>
+<p>Its default value was zero on my installation, it might be different on
+yours. You can change a lot of stuff in here, like the color of the
+dock, the padding of the items, etc. Each entry is commented with a
+small&nbsp;description.</p>
+<p>On my laptop I have a limited vertical space, so having the dock on the
+bottom wasn&#8217;t the best idea in my opinion. So to change the position of
+the dock, open up this&nbsp;file</p>
+<pre class="code sh literal-block">
+~/.config/plank/dock1/settings
+</pre>
+<p>And change the value of the &quot;Position&quot; variable to either&nbsp;0,1,2,3.</p>
+<p>0 to move it to the&nbsp;left.</p>
+<p>1 to move it to the&nbsp;right.</p>
+<p>2 to move it to the top (doesn&#8217;t work since we have the top&nbsp;bar).</p>
+<p>3 to move it to the bottom (the default&nbsp;value).</p>
+<p>That&#8217;s it for now, hope you like it and to the elementary devs and
+designers, you guys rock!&nbsp;\m/,</p>
+</div>
+
+    <footer>
+        <p>Posted in: <a href="http://localhost:8000/category/linux.html">Linux</a></p>
+        <p>Tagged as: <a href="http://localhost:8000/tag/elementary-os.html">elementary OS</a> / <a href="http://localhost:8000/tag/linux.html">linux</a> / <a href="http://localhost:8000/tag/tips-and-tricks.html">tips and tricks</a></p>
+        <p>Wanna tell me what you think? <a href="http://localhost:8000/">Get in touch.</a></p>
+    </footer>
+    </article>
+</section>                    </div>
+
+                    <footer id="site-footer">
+                        <p>
+                            <a href="" target="_blank">
+                                
+                            </a> Nasser /
+                            <a href="http://localhost:8000/">Archives</a>
+                        </p>
+                        <p>
+                            Powered by
+                            <a href="https://github.com/getpelican/pelican" target="_blank">
+                                Pelican
+                            </a>
+                            /
+                            Source code on
+                            <a href="http://github.com/siovene/iovene.com" target="blank">
+                                GitHub
+                            </a>
+                            /
+                            Theme <code>Lannisport</code>, also on
+                            <a href="http://github.com/siovene/lannisport" target="_blank">
+                                GitHub
+                            </a>
+                        </p>
+                    </footer>
+                </div> <!-- header+content+footer span -->
+
+                <div class="span4">
+                    <aside id="sidebar">
+                        <div id="social-icons">
+                        </div>
+
+                        <div id="site-logo">
+                            <a href="http://localhost:8000">
+                                <img alt="Nasser's Blog" src="/theme/img/site-logo.png" />
+                            </a>
+                        </div>
+
+                        <div id="navigation">
+<nav>
+	<h2>Pages</h2>
+	<ul>
+		<li>
+			<ul>
+				<li>
+					<a href="http://localhost:8000">Blog</a>
+				</li>
+
+					<li>
+						<a href="http://localhost:8000/pages/about.html">About&nbsp;Me</a>
+					</li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+
+<nav>
+	<h2>Categories</h2>
+	<ul>
+		<li>
+			<ul>
+					<li>
+						<a href="http://localhost:8000/category/android.html">Android</a>
+					</li>
+					<li>
+						<a href="http://localhost:8000/category/linux.html">Linux</a>
+					</li>
+					<li>
+						<a href="http://localhost:8000/category/news.html">News</a>
+					</li>
+					<li>
+						<a href="http://localhost:8000/category/other.html">Other</a>
+					</li>
+					<li>
+						<a href="http://localhost:8000/category/paintings.html">Paintings</a>
+					</li>
+					<li>
+						<a href="http://localhost:8000/category/programming.html">Programming</a>
+					</li>
+			</ul>
+		</li>
+	</ul>
+</nav>                        </div>
+                    </aside>
+                </div> <!-- logo+navigation span -->
+            </div> <!-- row -->
+        </div> <!-- /container -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="http://localhost:8000/theme/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>
+        <script>$('body').popover || document.write('<script src="http://localhost:8000/theme/js/vendor/bootstrap.min.js"><\/script>')</script>
+
+        <script src="http://localhost:8000/theme/js/vendor/jquery.colorbox-min.js"></script>
+
+        <script src="http://localhost:8000/theme/js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount',''],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>

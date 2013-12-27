@@ -6,23 +6,23 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Math puzzle / Nasser Blog</title>
+        <title>Math puzzle / Nasser's Blog</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="shortcut icon" href="/theme/favicon.ico" />
-        <link rel="apple-touch-icon" href="/theme/apple-touch-icon-iphone.png" />
-        <link rel="apple-touch-icon" sizes="72x72" href="/theme/apple-touch-icon-ipad.png" />
-        <link rel="apple-touch-icon" sizes="114x114" href="/theme/apple-touch-icon-iphone4.png" />
-        <link rel="apple-touch-icon" sizes="144x144" href="/theme/apple-touch-icon-ipad3.png" />
+        <link rel="shortcut icon" href="http://localhost:8000/theme/favicon.ico" />
+        <link rel="apple-touch-icon" href="http://localhost:8000/theme/apple-touch-icon-iphone.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="http://localhost:8000/theme/apple-touch-icon-ipad.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="http://localhost:8000/theme/apple-touch-icon-iphone4.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="http://localhost:8000/theme/apple-touch-icon-ipad3.png" />
 
-        <link rel="stylesheet" href="/theme/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/theme/css/bootstrap-responsive.min.css">
-        <link rel="stylesheet" href="/theme/css/colorbox.css">
+        <link rel="stylesheet" href="http://localhost:8000/theme/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://localhost:8000/theme/css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="http://localhost:8000/theme/css/colorbox.css">
 
-        <link rel="stylesheet" href="/theme/css/main.css">
+        <link rel="stylesheet" href="http://localhost:8000/theme/css/main.css">
 
-        <script src="/theme/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="http://localhost:8000/theme/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -34,9 +34,9 @@
                 <div class="span8">
                     <header id="site-header">
                         <h1>
-                            <a href="">Nasser Blog</a>
+                            <a href="http://localhost:8000">Nasser's Blog</a>
                             <small>
-                                <span class="divider">/</span> 
+                                <span class="divider">/</span> 42 is the answer!
                             </small>
                         </h1>
                         <p>
@@ -48,20 +48,15 @@
 <section>
     <article>
         <header>
-            <h2><a href="/math-puzzle-4.html" rel="bookmark">Math&nbsp;puzzle</a></h2>
+            <h2><a href="http://localhost:8000/math-puzzle-4.html" rel="bookmark">Math&nbsp;puzzle</a></h2>
             <time datetime="2012-12-04T21:48:00">Tue 04 December 2012</time>
         </header>
 
-            <div class="line-block">
-<div class="line">Yesterday, I was asked to solve a math puzzle that goes like this:</div>
-<div class="line-block">
-<div class="line">You have a 3x3 matrix where you have to fill it with&nbsp;the numbers 1-9,</div>
-</div>
-</div>
-<div class="system-message">
-<p class="system-message-title">System Message: <span class="caps">WARNING</span>/2 (<tt class="docutils">/home/nasser/Projects/nass3r.com/pelican/content/math-puzzle-4.rst</tt>, line&nbsp;9)</p>
-Line block ends without a blank line.</div>
-<p>&nbsp;as&nbsp;follows:</p>
+            <p>Yesterday, I was asked to solve a math puzzle that goes like&nbsp;this:</p>
+<blockquote>
+<p>You have a 3x3 matrix where you have to fill it with&nbsp;the numbers 1-9,
+as&nbsp;follows:</p>
+<blockquote>
 <table border="1" class="docutils">
 <colgroup>
 <col width="33%" />
@@ -83,58 +78,40 @@ Line block ends without a blank line.</div>
 </tr>
 </tbody>
 </table>
-<div class="line-block">
-<div class="line">Where,</div>
-<div class="line-block">
-<div class="line">N1 + N4 = N7 and</div>
-<div class="line">N2 + N5 = N8 and</div>
-<div class="line">N3 + N6 = N9</div>
-<div class="line">and no&nbsp;repetition&nbsp;is allowed!</div>
-<div class="line">So I spent sometime trying to solve it. Then I wrote a little Python</div>
-</div>
-</div>
-<div class="system-message">
-<p class="system-message-title">System Message: <span class="caps">WARNING</span>/2 (<tt class="docutils">/home/nasser/Projects/nass3r.com/pelican/content/math-puzzle-4.rst</tt>, line&nbsp;21)</p>
-Line block ends without a blank line.</div>
-<p>script to help me solve it, but it too didn&#8217;t work. It was a bit
-frustrating, to be honest, so I thought about it differently. We know
+</blockquote>
+<p>Where:</p>
+<p>N1 + N4 =&nbsp;N7,</p>
+<p>N2 + N5 =&nbsp;N8,</p>
+<p>N3 + N6 =&nbsp;N9</p>
+<p>and no&nbsp;repetition&nbsp;is&nbsp;allowed!</p>
+</blockquote>
+<p>So I spent sometime trying to solve it. Then I wrote a little Python
+script to help me solve it, but it too didn&#8217;t work. It was a bit
+frustrating, to be honest. So I thought about it differently. We know
 that an Even number + another Even number will yield an Even number. and
 an Odd number + an Odd number will also yield an Even number. The only
 case where we can get an Odd number is when we add an Even number with
-an Odd number. Let me state these in a clear way.
-|  <a href="#id1"><span class="problematic" id="id2">**</span></a>* O + O =&nbsp;E</p>
-<div class="system-message" id="id1">
-<p class="system-message-title">System Message: <span class="caps">WARNING</span>/2 (<tt class="docutils">/home/nasser/Projects/nass3r.com/pelican/content/math-puzzle-4.rst</tt>, line 26); <em><a href="#id2">backlink</a></em></p>
-Inline strong start-string without end-string.</div>
-<div class="system-message">
-<p class="system-message-title">System Message: <span class="caps">ERROR</span>/3 (<tt class="docutils">/home/nasser/Projects/nass3r.com/pelican/content/math-puzzle-4.rst</tt>, line&nbsp;33)</p>
-Unexpected indentation.</div>
-<blockquote>
-* E + E = E
-* O + E = O**</blockquote>
-<div class="system-message">
-<p class="system-message-title">System Message: <span class="caps">WARNING</span>/2 (<tt class="docutils">/home/nasser/Projects/nass3r.com/pelican/content/math-puzzle-4.rst</tt>, line&nbsp;35)</p>
-Block quote ends without a blank line; unexpected unindent.</div>
-<div class="line-block">
-<div class="line">So I counted the Odds and Evens in the list, which are:</div>
-<div class="line">1 &#8212; O</div>
-<div class="line">2 &#8212; E</div>
-<div class="line">3 &#8212; O</div>
-<div class="line">4 &#8212; E</div>
-<div class="line">5 &#8212; O</div>
-<div class="line">6 &#8212; E</div>
-<div class="line">7 &#8212; O</div>
-<div class="line">8 &#8212; E</div>
-<div class="line">9 &#8212; O</div>
-<div class="line"><strong>* 5 Odds</strong></div>
-<div class="line"><strong>* 4 Evens</strong></div>
-<div class="line">Now, no matter how you arrange the first two rows of the matrix, you</div>
-</div>
-<div class="system-message">
-<p class="system-message-title">System Message: <span class="caps">WARNING</span>/2 (<tt class="docutils">/home/nasser/Projects/nass3r.com/pelican/content/math-puzzle-4.rst</tt>, line&nbsp;36)</p>
-Line block ends without a blank line.</div>
-<p>can&#8217;t come up with a formation that will satisfy these constraints :)
-|  Here are some&nbsp;illustrations:</p>
+an Odd number. Let me state these in a clear&nbsp;way.</p>
+<p><strong>O + O =&nbsp;E</strong></p>
+<p><strong>E + E =&nbsp;E</strong></p>
+<p><strong>O + E =&nbsp;O</strong></p>
+<p>So I counted the Odds and Evens in the list, which&nbsp;are:</p>
+<ul class="simple">
+<li>1 &#8212;&nbsp;O</li>
+<li>2 &#8212;&nbsp;E</li>
+<li>3 &#8212;&nbsp;O</li>
+<li>4 &#8212;&nbsp;E</li>
+<li>5 &#8212;&nbsp;O</li>
+<li>6 &#8212;&nbsp;E</li>
+<li>7 &#8212;&nbsp;O</li>
+<li>8 &#8212;&nbsp;E</li>
+<li>9 &#8212;&nbsp;O</li>
+</ul>
+<p><strong>5 Odds</strong>
+<strong>4&nbsp;Evens</strong></p>
+<p>Now, no matter how you arrange the first two rows of the matrix, you
+can&#8217;t come up with a formation that will satisfy these constraints&nbsp;:)</p>
+<p>Here are some&nbsp;illustrations:</p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="33%" />
@@ -244,49 +221,37 @@ Line block ends without a blank line.</div>
 </tr>
 </tbody>
 </table>
-<div class="line-block">
-<div class="line">An Odd number remains.</div>
-<div class="line-block">
-<div class="line">etc&#8230;</div>
-<div class="line">Thus! (I&#8217;ve always liked to say <span class="caps">THUS</span>! :D) no solution is valid!</div>
-<div class="line">and this is the Python script that I wrote:</div>
-</div>
-</div>
-<div class="system-message">
-<p class="system-message-title">System Message: <span class="caps">WARNING</span>/2 (<tt class="docutils">/home/nasser/Projects/nass3r.com/pelican/content/math-puzzle-4.rst</tt>, line&nbsp;104)</p>
-<p>Cannot analyze code. No Pygments lexer found for&nbsp;&quot;brush:&quot;.</p>
-<pre class="literal-block">
-.. code:: brush:
+<p>An Odd number&nbsp;remains</p>
+<p>etc&#8230;</p>
+<p>Thus! (I&#8217;ve always liked to say <span class="caps">THUS</span>! :D) no solution is valid!
+and this is the Python script that I&nbsp;wrote:</p>
+<pre class="code python literal-block">
+<span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">product</span>
 
-    from itertools import product
+<span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
 
-    x = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+<span class="n">pro</span> <span class="o">=</span> <span class="p">[</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">product</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">repeat</span><span class="o">=</span><span class="mi">3</span><span class="p">)]</span>
 
-    pro = [ x for x in product(x, repeat=3)]
+<span class="k">def</span> <span class="nf">matSum</span><span class="p">(</span><span class="n">c1</span><span class="p">,</span> <span class="n">c2</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">c1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">c2</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">c1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">c2</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">c1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">c2</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
 
-    def matSum(c1, c2):
-        return (c1[0] + c2[0], c1[1] + c2[1], c1[2] + c2[2])
+<span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">+</span> <span class="n">z</span><span class="p">))</span> <span class="o">==</span> <span class="mi">9</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span>
 
-    def check(x, y, z):
-        if len(set(x + y + z)) == 9:
-            return x, y, z
-
-    for i in pro:
-        for j in pro:
-            s = matSum(i, j)
-            print check(i, j, s)
-
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">pro</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">pro</span><span class="p">:</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="n">matSum</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span>
+        <span class="k">print</span> <span class="n">check</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
 </pre>
-</div>
 <p>So, my dear reader, if you see any flaw in my mathematical reasoning,
 please let me know in the comment section below.&nbsp;Thanks!</p>
 
     <footer>
-        <p>Posted in: <a href="/category/math-programming.html">Math, Programming</a></p>
+        <p>Posted in: <a href="http://localhost:8000/category/programming.html">Programming</a></p>
         <p>Tagged as: </p>
-        <p>Wanna tell me what you think? <a href="/">Get in touch.</a></p>
+        <p>Wanna tell me what you think? <a href="http://localhost:8000/">Get in touch.</a></p>
     </footer>
-        </footer>
     </article>
 </section>                    </div>
 
@@ -295,7 +260,7 @@ please let me know in the comment section below.&nbsp;Thanks!</p>
                             <a href="" target="_blank">
                                 
                             </a> Nasser /
-                            <a href="/">Archives</a>
+                            <a href="http://localhost:8000/">Archives</a>
                         </p>
                         <p>
                             Powered by
@@ -322,8 +287,8 @@ please let me know in the comment section below.&nbsp;Thanks!</p>
                         </div>
 
                         <div id="site-logo">
-                            <a href="">
-                                <img alt="Nasser Blog" src="/theme/img/site-logo.png" />
+                            <a href="http://localhost:8000">
+                                <img alt="Nasser's Blog" src="/theme/img/site-logo.png" />
                             </a>
                         </div>
 
@@ -334,9 +299,12 @@ please let me know in the comment section below.&nbsp;Thanks!</p>
 		<li>
 			<ul>
 				<li>
-					<a href="">Blog</a>
+					<a href="http://localhost:8000">Blog</a>
 				</li>
 
+					<li>
+						<a href="http://localhost:8000/pages/about.html">About&nbsp;Me</a>
+					</li>
 			</ul>
 		</li>
 	</ul>
@@ -348,34 +316,22 @@ please let me know in the comment section below.&nbsp;Thanks!</p>
 		<li>
 			<ul>
 					<li>
-						<a href="/category/android.html">Android</a>
+						<a href="http://localhost:8000/category/android.html">Android</a>
 					</li>
 					<li>
-						<a href="/category/arabic.html">Arabic</a>
+						<a href="http://localhost:8000/category/linux.html">Linux</a>
 					</li>
 					<li>
-						<a href="/category/linux.html">Linux</a>
+						<a href="http://localhost:8000/category/news.html">News</a>
 					</li>
 					<li>
-						<a href="/category/linux-paintings.html">Linux, Paintings</a>
+						<a href="http://localhost:8000/category/other.html">Other</a>
 					</li>
 					<li>
-						<a href="/category/math-programming.html">Math, Programming</a>
+						<a href="http://localhost:8000/category/paintings.html">Paintings</a>
 					</li>
 					<li>
-						<a href="/category/misc.html">misc</a>
-					</li>
-					<li>
-						<a href="/category/news.html">News</a>
-					</li>
-					<li>
-						<a href="/category/paintings.html">Paintings</a>
-					</li>
-					<li>
-						<a href="/category/uncategorized.html">Uncategorized</a>
-					</li>
-					<li>
-						<a href="/category/yeah.html">yeah</a>
+						<a href="http://localhost:8000/category/programming.html">Programming</a>
 					</li>
 			</ul>
 		</li>
@@ -387,14 +343,14 @@ please let me know in the comment section below.&nbsp;Thanks!</p>
         </div> <!-- /container -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/theme/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="http://localhost:8000/theme/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 
         <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>
-        <script>$('body').popover || document.write('<script src="/theme/js/vendor/bootstrap.min.js"><\/script>')</script>
+        <script>$('body').popover || document.write('<script src="http://localhost:8000/theme/js/vendor/bootstrap.min.js"><\/script>')</script>
 
-        <script src="/theme/js/vendor/jquery.colorbox-min.js"></script>
+        <script src="http://localhost:8000/theme/js/vendor/jquery.colorbox-min.js"></script>
 
-        <script src="/theme/js/main.js"></script>
+        <script src="http://localhost:8000/theme/js/main.js"></script>
 
         <script>
             var _gaq=[['_setAccount',''],['_trackPageview']];
