@@ -9,7 +9,7 @@ html {
 
 body {
     background-image: url(../img/bg.png);
-    border-top: .5rem solid #DC143C;
+    border-top: .5rem solid #1e78a1;
     color: #444;
 
     -webkit-box-shadow: inset 0px .5rem 2rem 0px rgba(0, 0, 0, 0.33);
@@ -17,7 +17,7 @@ body {
 }
 
 a {
-    color: #DC143C;
+    color: #1e78a1;
     -o-transition:color .2s ease-out, background 1s ease-in;
     -ms-transition:color .2s ease-out, background 1s ease-in;
     -moz-transition:color .2s ease-out, background 1s ease-in;
@@ -27,7 +27,7 @@ a {
 }
 
 a:hover, a:active {
-    color: #990E2A;
+    color: #279cd1;
     text-decoration: none;
 }
 
@@ -179,7 +179,7 @@ article header h2 {
 @media screen and (min-width: 768px) {
     article header h2:before {
         display: block;
-        content: "\00b6";
+        content: "\222b";
         font-size: 2rem;
         position: absolute;
         left: -1.75rem;

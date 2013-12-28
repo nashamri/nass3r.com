@@ -1,11 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import random
 
 AUTHOR = u'Nasser'
 SITENAME = u"Nasser's Blog"
 SITETAGLINE = "42 is the answer!"
 SITEURL = 'http://localhost:8000'
+
+quotes = ["Hello",
+          "Funny quotes goes here"]
+SITEDESCR = quotes[random.randint(0, len(quotes)-1)]
 
 TIMEZONE = 'Europe/Paris'
 
@@ -23,9 +28,12 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('Google+', 'plus.google.com'),
-          ('Twitter', 'nashamri.twitter.com'),)
+#SOCIAL = (('Google+', 'plus.google.com'),
+          #('Twitter', 'nashamri.twitter.com'),)
 
+GITHUB_URL = "https://github.com/nashamri/"
+GOOGLE_URL = "https://plus.google.com/+nasseralshammari"
+TWITTER_URL = "https://www.twitter.com/nashamri"
 DEFAULT_PAGINATION = 4
 
 # Uncomment following line if you want document-relative URLs when developing
@@ -36,4 +44,4 @@ DEFAULT_PAGINATION = 4
 TYPOGRIFY = True
 THEME = "../lannisport"
 SITELOGO = "img/site-logo.png"
-STATIC_PATHS = ["images", ]
+#STATIC_PATHS = ["images", ]
