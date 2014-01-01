@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Wacom Intuos Pro and Linux / Nasser's Blog</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="shortcut icon" href="http://www.nass3r.com/theme/favicon.ico" />
+        <link rel="apple-touch-icon" href="http://www.nass3r.com/theme/apple-touch-icon-iphone.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="http://www.nass3r.com/theme/apple-touch-icon-ipad.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="http://www.nass3r.com/theme/apple-touch-icon-iphone4.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="http://www.nass3r.com/theme/apple-touch-icon-ipad3.png" />
+
+        <link rel="stylesheet" href="http://www.nass3r.com/theme/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.nass3r.com/theme/css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="http://www.nass3r.com/theme/css/colorbox.css">
+
+        <link rel="stylesheet" href="http://www.nass3r.com/theme/css/main.css">
+
+        <script src="http://www.nass3r.com/theme/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container">
+            <div class="row">
+                <div class="span8">
+                    <header id="site-header">
+                        <h1>
+                            <a href="http://www.nass3r.com">Nasser's Blog</a>
+                            <small>
+                                <span class="divider">/</span> 42 is the answer!
+                            </small>
+                        </h1>
+                        <p>
+                            If you tell the truth, you don't have to remember anything. --Mark Twain
+                        </p>
+                    </header>
+
+                    <div class="content">
+<section>
+    <article>
+        <header>
+            <h2><a href="http://www.nass3r.com/wacom-intuos.html" rel="bookmark">Wacom Intuos Pro and&nbsp;Linux</a></h2>
+            <time datetime="2014-01-01T14:58:00">Wed 01 January 2014</time>
+        </header>
+
+            <div class="section" id="intuos-pro">
+<h2>Intuos&nbsp;Pro</h2>
+<p><img alt="wacom intuos pro" src="http://www.nass3r.com/images/wacom/wacom1.jpg" /></p>
+<p>So a new year and I got my self a little gift, a Wacom Intuos pro. I&#8217;m upgrading
+from an Intuos 3 so my opinions could be a little out of&nbsp;date.</p>
+<p>Here is a couple of pictures of the pen and the pen&nbsp;holder.</p>
+<p><img alt="wacom intuos pro pen and pen holder" src="http://www.nass3r.com/images/wacom/wacom2.jpg" />
+<img alt="wacom intuos pro pen" src="http://www.nass3r.com/images/wacom/wacom3.jpg" /></p>
+<p>The cool thing about the pen is the different nibs that you can use. As you can
+see in the picture below, the nibs are stored in the pen holder and you can
+choose the one that best suits your&nbsp;style.</p>
+<p><img alt="wacom intuos pro holde and nibs" src="http://www.nass3r.com/images/wacom/wacom4.jpg" /></p>
+<p>The Intuos pro comes in three different sized. I got the small one because it&#8217;s
+cheaper :P and I wanted a compact tablet that I can easily carry with me if
+I want to. The tablet surface feels like paper and It&#8217;s definitely an improvement
+over the Intuos&nbsp;3.</p>
+<p><img alt="wacom intuos pro table" src="http://www.nass3r.com/images/wacom/wacom5.jpg" /></p>
+<p>Another thing that I really like about the Intuos pro is the ability to have it
+work wirelessly. Underneath the tablet there is a removable battery and
+a compartment for the wireless dongle. You can remove the battery and the
+wireless dongle if you want to work in wired mode. The battery is charged via
+the <span class="caps">USB</span> cable in wired&nbsp;mode.</p>
+<p><img alt="wacom intuos pro table" src="http://www.nass3r.com/images/wacom/wacom6.jpg" /></p>
+<p>Here are closer pictures of the wireless and <span class="caps">USB</span>&nbsp;dongle.</p>
+<p><img alt="wacom intuos pro table" src="http://www.nass3r.com/images/wacom/wacom7.jpg" />
+<img alt="wacom intuos pro table" src="http://www.nass3r.com/images/wacom/wacom8.jpg" /></p>
+</div>
+<div class="section" id="installation-and-configuration">
+<h2>Installation and&nbsp;Configuration</h2>
+<p>The main purpose of this blog post is to show how I got the tablet to work under
+Linux. I&#8217;m using Arch at the moment and when I plugged the tablet in, it did&#8217;t
+work. I had to mess with it a bit to get it&nbsp;working.</p>
+<div class="section" id="driver-installation">
+<h3>Driver&nbsp;installation</h3>
+<p>First off, you need to install the wacom drivers. So run the following command
+which will install the drivers form the main&nbsp;repos.</p>
+<pre class="code sh literal-block">
+sudo pacman -S xf86-input-wacom
+</pre>
+</div>
+<div class="section" id="kernel-module-installation">
+<h3>Kernel module&nbsp;installation</h3>
+<p>Then you have to install this kernel <a class="reference external" href="https://aur.archlinux.org/packages/input-wacom-dkms/">module</a>. Thanks to <a class="reference external" href="https://aur.archlinux.org/packages/?K=apicici&amp;SeB=m">apicici</a> for maintaining
+this. It&#8217;s not in the official repos but you can get it from <span class="caps">AUR</span>. I&#8217;m using
+yaourt here, but you can use whatever <span class="caps">AUR</span> manager you have. Also, you have to
+have the kernel headers installed before this step, if you don&#8217;t have them&nbsp;already.</p>
+<pre class="code sh literal-block">
+sudo pacman -S linux-headers
+sudo yaourt -S input-wacom-dkms
+</pre>
+</div>
+<div class="section" id="desktop-environment-configuration">
+<h3>Desktop environment&nbsp;configuration</h3>
+<p>I use <span class="caps">KDE</span> now and there&#8217;s a cool <abbr title="KConfig Modules"><span class="caps">KCM</span></abbr> for the wacom
+tablet in the <span class="caps">AUR</span>. To get it run the&nbsp;following:</p>
+<pre class="code sh literal-block">
+sudo yaourt -S kcm-wacomtablet
+</pre>
+<p>Here is a screen shot of&nbsp;it:</p>
+<p><a class="reference external" href="http://www.nass3r.com/images/wacom/kcm1.png"><img alt="Wacom KCM" src="http://www.nass3r.com/images/wacom/kcm1.png" /></a></p>
+<p>The tablet could be used as a big touchpad. While it&#8217;s good to have the option,
+it&#8217;s not really practical because the palm rejection isn&#8217;t working. So I think
+disabling the touchpad is better, for now at least. You can do so as shown in
+the screen shot&nbsp;below:</p>
+<p><a class="reference external" href="http://www.nass3r.com/images/wacom/kcm2.png"><img alt="Wacom KCM" src="http://www.nass3r.com/images/wacom/kcm2.png" /></a></p>
+<p>One awesome feature of this <span class="caps">KCS</span>, is the ability to have profiles. Here I have
+some shortcuts for <a class="reference external" href="http://mypaint.intilinux.com/">MyPaint</a>.</p>
+<p><a class="reference external" href="http://www.nass3r.com/images/wacom/kcm3.png"><img alt="Wacom KCM" src="http://www.nass3r.com/images/wacom/kcm3.png" /></a></p>
+<p>So this is it, have&nbsp;fun!</p>
+<p><img alt="wacom intuos pro table" src="http://www.nass3r.com/images/wacom/wacom9.jpg" /></p>
+</div>
+</div>
+
+    <footer>
+        <p>Posted in: <a href="http://www.nass3r.com/category/paintings.html">Paintings</a></p>
+        <p>Tagged as: <a href="http://www.nass3r.com/tag/krita.html">krita</a> / <a href="http://www.nass3r.com/tag/mypaint.html">mypaint</a> / <a href="http://www.nass3r.com/tag/paintings.html">paintings</a> / <a href="http://www.nass3r.com/tag/linux.html">linux</a> / <a href="http://www.nass3r.com/tag/arch.html">arch</a> / <a href="http://www.nass3r.com/tag/wacom.html">wacom</a> / <a href="http://www.nass3r.com/tag/intuos-pro.html">intuos pro</a> / <a href="http://www.nass3r.com/tag/review.html">review</a> / <a href="http://www.nass3r.com/tag/installation.html">installation</a> / <a href="http://www.nass3r.com/tag/configuration.html">configuration</a></p>
+        <p>Wanna tell me what you think? <a href="http://www.nass3r.com/">Get in touch.</a></p>
+    </footer>
+    </article>
+</section>                    </div>
+
+                    <footer id="site-footer">
+                        <p>
+                            <a href="" target="_blank">
+                                
+                            </a> Nasser /
+                            <a href="http://www.nass3r.com/">Archives</a>
+                        </p>
+                        <p>
+                            Powered by
+                            <a href="https://github.com/getpelican/pelican" target="_blank">
+                                Pelican
+                            </a>
+                            /
+                            Theme Lannisport, on
+                            <a href="http://github.com/siovene/lannisport" target="_blank">
+                                GitHub
+                            </a>
+                        </p>
+                    </footer>
+                </div> <!-- header+content+footer span -->
+
+                <div class="span4">
+                    <aside id="sidebar">
+                        <div id="social-icons">
+                                <span class="social-icon">
+                                    <a href="https://github.com/nashamri/" target="_blank" title="GitHub">
+                                        <img src="http://www.nass3r.com/theme/img/GitHub.png" alt="GitHub"/>
+                                    </a>
+                                </span>
+                                <span class="social-icon">
+                                    <a href="http://www.linkedin.com/pub/nasser-alshammari/88/799/834" target="_blank" title="LinkedIn">
+                                        <img src="http://www.nass3r.com/theme/img/LinkedIn.png" alt="LinkedIn"/>
+                                    </a>
+                                </span>
+                                <span class="social-icon">
+                                    <a href="https://www.twitter.com/nashamri" target="_blank" title="Twitter">
+                                        <img src="http://www.nass3r.com/theme/img/Twitter.png" alt="Twitter"/>
+                                    </a>
+                                </span>
+                                <span class="social-icon">
+                                    <a href="https://plus.google.com/+nasseralshammari" target="_blank" title="Google">
+                                        <img src="http://www.nass3r.com/theme/img/Google.png" alt="Google"/>
+                                    </a>
+                                </span>
+                        </div>
+
+                        <div id="site-logo">
+                            <a href="http://www.nass3r.com">
+                                <img alt="Nasser's Blog" src="/theme/img/site-logo.png" />
+                            </a>
+                        </div>
+
+                        <div id="navigation">
+<nav>
+	<h2>Pages</h2>
+	<ul>
+		<li>
+			<ul>
+				<li>
+					<a href="http://www.nass3r.com">Blog</a>
+				</li>
+
+					<li>
+						<a href="http://www.nass3r.com/pages/about.html">About&nbsp;Me</a>
+					</li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+
+<nav>
+	<h2>Categories</h2>
+	<ul>
+		<li>
+			<ul>
+					<li>
+						<a href="http://www.nass3r.com/category/android.html">Android</a>
+					</li>
+					<li>
+						<a href="http://www.nass3r.com/category/linux.html">Linux</a>
+					</li>
+					<li>
+						<a href="http://www.nass3r.com/category/news.html">News</a>
+					</li>
+					<li>
+						<a href="http://www.nass3r.com/category/other.html">Other</a>
+					</li>
+					<li>
+						<a href="http://www.nass3r.com/category/paintings.html">Paintings</a>
+					</li>
+					<li>
+						<a href="http://www.nass3r.com/category/programming.html">Programming</a>
+					</li>
+			</ul>
+		</li>
+	</ul>
+</nav>                        </div>
+                    </aside>
+                </div> <!-- logo+navigation span -->
+            </div> <!-- row -->
+        </div> <!-- /container -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="http://www.nass3r.com/theme/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>
+        <script>$('body').popover || document.write('<script src="http://www.nass3r.com/theme/js/vendor/bootstrap.min.js"><\/script>')</script>
+
+        <script src="http://www.nass3r.com/theme/js/vendor/jquery.colorbox-min.js"></script>
+
+        <script src="http://www.nass3r.com/theme/js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-36815966-1'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
