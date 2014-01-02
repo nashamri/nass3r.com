@@ -1,4 +1,4 @@
-PY=python
+PY=python2
 PELICAN=pelican
 PELICANOPTS=
 
@@ -12,10 +12,10 @@ FTP_HOST=localhost
 FTP_USER=anonymous
 FTP_TARGET_DIR=/
 
-SSH_HOST=localhost
+SSH_HOST=nass3r.com
 SSH_PORT=22
 SSH_USER=root
-SSH_TARGET_DIR=/var/www
+SSH_TARGET_DIR=/var/www/nass3r/
 
 S3_BUCKET=my_s3_bucket
 

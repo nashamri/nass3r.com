@@ -1,5 +1,6 @@
 Wacom Intuos Pro and Linux
 ##########################
+
 :date: 2014-01-01 14:58
 :author: nasser
 :category: Paintings
@@ -103,6 +104,12 @@ some shortcuts for MyPaint_.
 So this is it, have fun!
 
 |wacom9|
+
+UPDATES
+-------
+
+Thanks to `Vasco Alexander Basqué <https://plus.google.com/+VascoAlexanderBasqu%C3%A9/posts>`_ for pointing out that the Intuos pro needs
+xf86-input-wacom version 0.23 or newer. It won't work with older drivers.
 
 .. |wacom1| image:: {filename}images/wacom/wacom1.jpg
    :alt: wacom intuos pro

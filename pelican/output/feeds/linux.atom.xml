@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Nasser's Blog</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2012-12-12T19:52:00+01:00</updated><entry><title>Arabic in Vim</title><link href="/arabic-in-vim.html" rel="alternate"></link><updated>2012-12-12T19:52:00+01:00</updated><author><name>nasser</name></author><id>tag:,2012-12-12:arabic-in-vim.html</id><summary type="html">&lt;p&gt;If you want to write Arabic in vim, there&amp;#8217;s a small option that sets the
+direction of the page to right-to-left and lets you write Arabic with no
+problems&amp;nbsp;:D&lt;/p&gt;
+&lt;p&gt;The option&amp;nbsp;is:&lt;/p&gt;
+&lt;pre class="code vim literal-block"&gt;
+&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;arabic&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;And to turn it off,&amp;nbsp;type:&lt;/p&gt;
+&lt;pre class="code vim literal-block"&gt;
+&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;noarabic&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;Here&amp;#8217;s a small screenshot of vim with Arabic working just&amp;nbsp;fine!&lt;/p&gt;
+&lt;img alt="Arabic in vim" src="/images/arabicVim.png" /&gt;
+</summary><category term="vim"></category><category term="arabic"></category><category term="linux"></category></entry><entry><title>Tips and Tricks for elementary OS Luna</title><link href="/tips-and-tricks-for-elementary-os-luna.html" rel="alternate"></link><updated>2012-12-11T19:19:00+01:00</updated><author><name>nasser</name></author><id>tag:,2012-12-11:tips-and-tricks-for-elementary-os-luna.html</id><summary type="html">&lt;p&gt;After using Elementary &lt;span class="caps"&gt;OS&lt;/span&gt; as my main distro on my Desktop and my laptop
+for sometime, Here are some tips and tricks and small modifications that
+I have right&amp;nbsp;now:&lt;/p&gt;
+&lt;p&gt;Make sure you have dconf-editor installed you can do so by running this&amp;nbsp;command:&lt;/p&gt;
+&lt;pre class="code sh literal-block"&gt;
+sudo apt-get install dconf-tools
+&lt;/pre&gt;
+&lt;div class="section" id="remove-ubuntu-overlay-scroll-bars"&gt;
+&lt;h2&gt;1. Remove ubuntu overlay scroll&amp;nbsp;bars:&lt;/h2&gt;
+&lt;p&gt;open dconf-editor then go to this&amp;nbsp;path:&lt;/p&gt;
+&lt;pre class="code sh literal-block"&gt;
+org.gnome.desktop.interface
+&lt;/pre&gt;
+&lt;p&gt;And uncheck the ubuntu-overlay-scrollbars&amp;nbsp;entry.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="silencing-the-bell"&gt;
+&lt;h2&gt;2. Silencing the&amp;nbsp;bell:&lt;/h2&gt;
+&lt;p&gt;This for muting that annoying sound when you try to auto-complete
+something in the terminal and nothing matches. Go to this path with&amp;nbsp;dconf-editor:&lt;/p&gt;
+&lt;pre class="code sh literal-block"&gt;
+org.gnome.desktop.wm.preferences
+&lt;/pre&gt;
+&lt;p&gt;And uncheck the audible-bell&amp;nbsp;entry.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="modify-the-dock"&gt;
+&lt;h2&gt;3. Modify the&amp;nbsp;dock:&lt;/h2&gt;
+&lt;p&gt;I like to have the indicators on so I can know whether a program is
+running or not.
+To do so, open up this file with your favorite text&amp;nbsp;editor:&lt;/p&gt;
+&lt;pre class="code sh literal-block"&gt;
+~/.config/plank/theme/dock.theme
+&lt;/pre&gt;
+&lt;p&gt;And change this&amp;nbsp;line:&lt;/p&gt;
+&lt;pre class="code sh literal-block"&gt;
+&lt;span class="nv"&gt;IndicatorSize&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;5
+&lt;/pre&gt;
+&lt;p&gt;Its default value was zero on my installation, it might be different on
+yours. You can change a lot of stuff in here, like the color of the
+dock, the padding of the items, etc. Each entry is commented with a
+small&amp;nbsp;description.&lt;/p&gt;
+&lt;p&gt;On my laptop I have a limited vertical space, so having the dock on the
+bottom wasn&amp;#8217;t the best idea in my opinion. So to change the position of
+the dock, open up this&amp;nbsp;file&lt;/p&gt;
+&lt;pre class="code sh literal-block"&gt;
+~/.config/plank/dock1/settings
+&lt;/pre&gt;
+&lt;p&gt;And change the value of the &amp;quot;Position&amp;quot; variable to either&amp;nbsp;0,1,2,3.&lt;/p&gt;
+&lt;p&gt;0 to move it to the&amp;nbsp;left.&lt;/p&gt;
+&lt;p&gt;1 to move it to the&amp;nbsp;right.&lt;/p&gt;
+&lt;p&gt;2 to move it to the top (doesn&amp;#8217;t work since we have the top&amp;nbsp;bar).&lt;/p&gt;
+&lt;p&gt;3 to move it to the bottom (the default&amp;nbsp;value).&lt;/p&gt;
+&lt;p&gt;That&amp;#8217;s it for now, hope you like it and to the elementary devs and
+designers, you guys rock!&amp;nbsp;\m/,&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="elementary OS"></category><category term="linux"></category><category term="tips and tricks"></category></entry><entry><title>Boosting your ati graphics performance</title><link href="/boosting-your-ati-graphics-performance.html" rel="alternate"></link><updated>2012-10-06T20:31:00+02:00</updated><author><name>nasser</name></author><id>tag:,2012-10-06:boosting-your-ati-graphics-performance.html</id><summary type="html">&lt;p&gt;If you have an &lt;span class="caps"&gt;ATI&lt;/span&gt; graphics card (&lt;span class="caps"&gt;ATI&lt;/span&gt; Radeon &lt;span class="caps"&gt;HD&lt;/span&gt; 3000 series or newer)
+and using the open source driver you can get better performance by
+enabling &lt;span class="caps"&gt;PCI&lt;/span&gt;-E Gen2 option.
+To enable this on Ubuntu 12.04, you must pass this boot&amp;nbsp;parameter:&lt;/p&gt;
+&lt;pre class="code sh literal-block"&gt;
+radeon.pcie_gen2&lt;span class="o"&gt;=&lt;/span&gt;1
+&lt;/pre&gt;
+&lt;p&gt;Here are the detailed&amp;nbsp;steps:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Run the following command in a terminal (use your favorite text&amp;nbsp;editor):&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class="code sh literal-block"&gt;
+sudo vim /etc/default/grub
+&lt;/pre&gt;
+&lt;ol class="arabic simple" start="2"&gt;
+&lt;li&gt;Change the line that&amp;nbsp;says:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class="code sh literal-block"&gt;
+&lt;span class="nv"&gt;GRUB_CMDLINE_LINUX_DEFAULT&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;quiet splash&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;To&lt;/p&gt;
+&lt;pre class="code sh literal-block"&gt;
+&lt;span class="nv"&gt;GRUB_CMDLINE_LINUX_DEFAULT&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;quiet splash radeon.pcie_gen2=1&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;
+&lt;ol class="arabic simple" start="3"&gt;
+&lt;li&gt;Save the file and run the following&amp;nbsp;command:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class="code sh literal-block"&gt;
+sudo update-grub
+&lt;/pre&gt;
+&lt;ol class="arabic simple" start="4"&gt;
+&lt;li&gt;Reboot and enjoy the butter smooth&amp;nbsp;performance.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I&amp;#8217;m getting really great result while testing Elementary &lt;span class="caps"&gt;OS&lt;/span&gt; luna.
+Everything is so smooth and nice, Good job elementary team&amp;nbsp;:)&lt;/p&gt;
+</summary><category term="ati"></category><category term="elementary OS"></category><category term="Linux"></category><category term="radeon"></category><category term="ubuntu"></category></entry></feed>
