@@ -1,7 +1,7 @@
 Dualtidy, a lightweight dual battery indicator
 ##############################################
 
-:date: 2014-01-01 14:58
+:date: 2014-05-05 20:28
 :author: nasser
 :category: Linux 
 :slug: dualtidy

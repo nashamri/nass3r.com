@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Nasser's Blog</title><link href="/" rel="alternate"></link><link href="/feeds/paintings.atom.xml" rel="self"></link><id>/</id><updated>2014-01-01T14:58:00+01:00</updated><entry><title>Wacom Intuos Pro and Linux</title><link href="/wacom-intuos.html" rel="alternate"></link><updated>2014-01-01T14:58:00+01:00</updated><author><name>nasser</name></author><id>tag:,2014-01-01:wacom-intuos.html</id><summary type="html">&lt;div class="section" id="intuos-pro"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Nasser's Blog</title><link href="http://www.nass3r.com/" rel="alternate"></link><link href="http://www.nass3r.com/feeds/paintings.atom.xml" rel="self"></link><id>http://www.nass3r.com/</id><updated>2014-01-01T14:58:00+01:00</updated><entry><title>Wacom Intuos Pro and Linux</title><link href="http://www.nass3r.com/wacom-intuos.html" rel="alternate"></link><updated>2014-01-01T14:58:00+01:00</updated><author><name>nasser</name></author><id>tag:www.nass3r.com,2014-01-01:wacom-intuos.html</id><summary type="html">&lt;div class="section" id="intuos-pro"&gt;
 &lt;h2&gt;Intuos&amp;nbsp;Pro&lt;/h2&gt;
-&lt;p&gt;&lt;img alt="wacom intuos pro" src="/images/wacom/wacom1.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="wacom intuos pro" src="http://www.nass3r.com/images/wacom/wacom1.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;So a new year and I got my self a little gift, a Wacom Intuos pro. I&amp;#8217;m upgrading
 from an Intuos 3 so my opinions could be a little out of&amp;nbsp;date.&lt;/p&gt;
 &lt;p&gt;Here is a couple of pictures of the pen and the pen&amp;nbsp;holder.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="wacom intuos pro pen and pen holder" src="/images/wacom/wacom2.jpg" /&gt;
-&lt;img alt="wacom intuos pro pen" src="/images/wacom/wacom3.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="wacom intuos pro pen and pen holder" src="http://www.nass3r.com/images/wacom/wacom2.jpg" /&gt;
+&lt;img alt="wacom intuos pro pen" src="http://www.nass3r.com/images/wacom/wacom3.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;The cool thing about the pen is the different nibs that you can use. As you can
 see in the picture below, the nibs are stored in the pen holder and you can
 choose the one that best suits your&amp;nbsp;style.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="wacom intuos pro holde and nibs" src="/images/wacom/wacom4.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="wacom intuos pro holde and nibs" src="http://www.nass3r.com/images/wacom/wacom4.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;The Intuos pro comes in three different sized. I got the small one because it&amp;#8217;s
 cheaper :P and I wanted a compact tablet that I can easily carry with me if
 I want to. The tablet surface feels like paper and It&amp;#8217;s definitely an improvement
 over the Intuos&amp;nbsp;3.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="wacom intuos pro table" src="/images/wacom/wacom5.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="wacom intuos pro table" src="http://www.nass3r.com/images/wacom/wacom5.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Another thing that I really like about the Intuos pro is the ability to have it
 work wirelessly. Underneath the tablet there is a removable battery and
 a compartment for the wireless dongle. You can remove the battery and the
 wireless dongle if you want to work in wired mode. The battery is charged via
 the &lt;span class="caps"&gt;USB&lt;/span&gt; cable in wired&amp;nbsp;mode.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="wacom intuos pro table" src="/images/wacom/wacom6.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="wacom intuos pro table" src="http://www.nass3r.com/images/wacom/wacom6.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Here are closer pictures of the wireless and &lt;span class="caps"&gt;USB&lt;/span&gt;&amp;nbsp;dongle.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="wacom intuos pro table" src="/images/wacom/wacom7.jpg" /&gt;
-&lt;img alt="wacom intuos pro table" src="/images/wacom/wacom8.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="wacom intuos pro table" src="http://www.nass3r.com/images/wacom/wacom7.jpg" /&gt;
+&lt;img alt="wacom intuos pro table" src="http://www.nass3r.com/images/wacom/wacom8.jpg" /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="installation-and-configuration"&gt;
 &lt;h2&gt;Installation and&amp;nbsp;Configuration&lt;/h2&gt;
@@ -58,17 +58,17 @@ tablet in the &lt;span class="caps"&gt;AUR&lt;/span&gt;. To get it run the&amp;n
 sudo yaourt -S kcm-wacomtablet
 &lt;/pre&gt;
 &lt;p&gt;Here is a screen shot of&amp;nbsp;it:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="/images/wacom/kcm1.png"&gt;&lt;img alt="Wacom KCM" src="/images/wacom/kcm1.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.nass3r.com/images/wacom/kcm1.png"&gt;&lt;img alt="Wacom KCM" src="http://www.nass3r.com/images/wacom/kcm1.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The tablet could be used as a big touchpad. While it&amp;#8217;s good to have the option,
 it&amp;#8217;s not really practical because the palm rejection isn&amp;#8217;t working. So I think
 disabling the touchpad is better, for now at least. You can do so as shown in
 the screen shot&amp;nbsp;below:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="/images/wacom/kcm2.png"&gt;&lt;img alt="Wacom KCM" src="/images/wacom/kcm2.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.nass3r.com/images/wacom/kcm2.png"&gt;&lt;img alt="Wacom KCM" src="http://www.nass3r.com/images/wacom/kcm2.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;One awesome feature of this &lt;span class="caps"&gt;KCS&lt;/span&gt;, is the ability to have profiles. Here I have
 some shortcuts for &lt;a class="reference external" href="http://mypaint.intilinux.com/"&gt;MyPaint&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="/images/wacom/kcm3.png"&gt;&lt;img alt="Wacom KCM" src="/images/wacom/kcm3.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.nass3r.com/images/wacom/kcm3.png"&gt;&lt;img alt="Wacom KCM" src="http://www.nass3r.com/images/wacom/kcm3.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;So this is it, have&amp;nbsp;fun!&lt;/p&gt;
-&lt;p&gt;&lt;img alt="wacom intuos pro table" src="/images/wacom/wacom9.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="wacom intuos pro table" src="http://www.nass3r.com/images/wacom/wacom9.jpg" /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="updates"&gt;
 &lt;h3&gt;&lt;span class="caps"&gt;UPDATES&lt;/span&gt;&lt;/h3&gt;
@@ -76,12 +76,12 @@ some shortcuts for &lt;a class="reference external" href="http://mypaint.intilin
 xf86-input-wacom version 0.23 or newer. It won&amp;#8217;t work with older&amp;nbsp;drivers.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="krita"></category><category term="mypaint"></category><category term="paintings"></category><category term="linux"></category><category term="arch"></category><category term="wacom"></category><category term="intuos pro"></category><category term="review"></category><category term="installation"></category><category term="configuration"></category></entry><entry><title>Bertrand Russell</title><link href="/bertrand-russell.html" rel="alternate"></link><updated>2012-10-26T21:56:00+02:00</updated><author><name>nasser</name></author><id>tag:,2012-10-26:bertrand-russell.html</id><summary type="html">&lt;p&gt;I just finished this painting of Bertrand Russell with Krita 2.5&amp;nbsp;:)&lt;/p&gt;
-&lt;a class="reference external image-reference" href="/images/russell.png"&gt;&lt;img alt="Bertrand Russell" src="/images/russell.png" /&gt;&lt;/a&gt;
-</summary><category term="krita"></category><category term="linux"></category><category term="painting"></category><category term="bertrand russell"></category></entry><entry><title>A penguin :)</title><link href="/a-penguin.html" rel="alternate"></link><updated>2012-10-02T18:09:00+02:00</updated><author><name>nasser</name></author><id>tag:,2012-10-02:a-penguin.html</id><summary type="html">&lt;p&gt;Just a fast painting of a cute penguin&amp;nbsp;:)&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="/images/faresPenguin.png"&gt;&lt;img alt="Fares penguin" src="/images/faresPenguin.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+</summary><category term="krita"></category><category term="mypaint"></category><category term="paintings"></category><category term="linux"></category><category term="arch"></category><category term="wacom"></category><category term="intuos pro"></category><category term="review"></category><category term="installation"></category><category term="configuration"></category></entry><entry><title>Bertrand Russell</title><link href="http://www.nass3r.com/bertrand-russell.html" rel="alternate"></link><updated>2012-10-26T21:56:00+02:00</updated><author><name>nasser</name></author><id>tag:www.nass3r.com,2012-10-26:bertrand-russell.html</id><summary type="html">&lt;p&gt;I just finished this painting of Bertrand Russell with Krita 2.5&amp;nbsp;:)&lt;/p&gt;
+&lt;a class="reference external image-reference" href="http://www.nass3r.com/images/russell.png"&gt;&lt;img alt="Bertrand Russell" src="http://www.nass3r.com/images/russell.png" /&gt;&lt;/a&gt;
+</summary><category term="krita"></category><category term="linux"></category><category term="painting"></category><category term="bertrand russell"></category></entry><entry><title>A penguin :)</title><link href="http://www.nass3r.com/a-penguin.html" rel="alternate"></link><updated>2012-10-02T18:09:00+02:00</updated><author><name>nasser</name></author><id>tag:www.nass3r.com,2012-10-02:a-penguin.html</id><summary type="html">&lt;p&gt;Just a fast painting of a cute penguin&amp;nbsp;:)&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.nass3r.com/images/faresPenguin.png"&gt;&lt;img alt="Fares penguin" src="http://www.nass3r.com/images/faresPenguin.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Thanks Fares&amp;nbsp;:)&lt;/p&gt;
-</summary><category term="penguin"></category><category term="mypaint"></category><category term="paintings"></category></entry><entry><title>Game of Thrones painting</title><link href="/game-of-thrones-painting.html" rel="alternate"></link><updated>2012-10-02T18:04:00+02:00</updated><author><name>nasser</name></author><id>tag:,2012-10-02:game-of-thrones-painting.html</id><summary type="html">&lt;p&gt;This is a fast painting I did a while ago while I was waiting in my&amp;nbsp;car&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="/images/Game-of-thrones.png"&gt;&lt;img alt="Game of Thrones" src="/images/Game-of-thrones.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+</summary><category term="penguin"></category><category term="mypaint"></category><category term="paintings"></category></entry><entry><title>Game of Thrones painting</title><link href="http://www.nass3r.com/game-of-thrones-painting.html" rel="alternate"></link><updated>2012-10-02T18:04:00+02:00</updated><author><name>nasser</name></author><id>tag:www.nass3r.com,2012-10-02:game-of-thrones-painting.html</id><summary type="html">&lt;p&gt;This is a fast painting I did a while ago while I was waiting in my&amp;nbsp;car&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.nass3r.com/images/Game-of-thrones.png"&gt;&lt;img alt="Game of Thrones" src="http://www.nass3r.com/images/Game-of-thrones.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;It was a scene from the &lt;span class="caps"&gt;TV&lt;/span&gt; series Game of Thrones and was done with&amp;nbsp;MyPaint.&lt;/p&gt;
 </summary><category term="game of thrones"></category><category term="linux"></category><category term="paintings"></category><category term="mypaint"></category></entry></feed>
