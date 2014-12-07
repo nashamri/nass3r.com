@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Nasser's Blog</title><link href="http://www.nass3r.com/" rel="alternate"></link><link href="http://www.nass3r.com/feeds/android.atom.xml" rel="self"></link><id>http://www.nass3r.com/</id><updated>2013-03-28T14:37:00+01:00</updated><entry><title>Android Storage space running out!</title><link href="http://www.nass3r.com/android-storage-space-running-out.html" rel="alternate"></link><updated>2013-03-28T14:37:00+01:00</updated><author><name>nasser</name></author><id>tag:www.nass3r.com,2013-03-28:android-storage-space-running-out.html</id><summary type="html">&lt;p&gt;I have my galaxy &lt;span class="caps"&gt;SII&lt;/span&gt; with&amp;nbsp;Cyanogenmod 10.1 and I got this message
+&amp;quot;Storage space running out some system functions may not work&amp;quot;. I tried
+to uninstall some applications but that didn&amp;#8217;t do the trick. I only had
+like &lt;span class="caps"&gt;100MB&lt;/span&gt; of free space. Then I found that there are like 1.8Gigs of
+log files stored in the /data/log directory which I don&amp;#8217;t really care&amp;nbsp;about.&lt;/p&gt;
+&lt;img alt="Android storage warning" src="http://www.nass3r.com/images/androidStorage.png" /&gt;
+&lt;p&gt;So in order to free some space, I ran the following commands from the&amp;nbsp;terminal:&lt;/p&gt;
+&lt;pre class="code bash literal-block"&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;su -
+&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /data/log
+&lt;span class="nv"&gt;$ &lt;/span&gt;rm *.log
+&lt;/pre&gt;
+&lt;p&gt;It&amp;#8217;ll ask for root permissions when u run the first line.
+Hope this&amp;nbsp;helps!&lt;/p&gt;
+</summary><category term="android"></category><category term="storage space"></category></entry></feed>
