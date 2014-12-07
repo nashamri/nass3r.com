@@ -27,7 +27,7 @@ DEFAULT_LANG = u'en'
 GOOGLE_ANALYTICS_CODE = 'UA-36815966-1'
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
@@ -56,4 +56,4 @@ DEFAULT_PAGINATION = 4
 TYPOGRIFY = True
 THEME = "../lannisport"
 SITELOGO = "img/site-logo.png"
-#STATIC_PATHS = ["images", ]
+STATIC_PATHS = ["images", "docs"]
