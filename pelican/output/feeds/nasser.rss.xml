@@ -2,6 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nasser's Blog</title><link>http://www.nass3r.com/</link><description></description><atom:link href="http://www.nass3r.com/feeds/nasser.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 06 Dec 2014 06:44:00 +0100</lastBuildDate><item><title>Computer Science?</title><link>http://www.nass3r.com/computer-science.html</link><description>&lt;p&gt;What is computer science? is it a scientific discipline? or an engineering discipline? or is it a form of Art?
 I tried to answer these questions with a small presentation that I gave in the university and I thought should share the slides of that presentation. So, grab it from &lt;a class="reference external" href="docs/presentation.pdf"&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">nasser</dc:creator><pubDate>Sat, 06 Dec 2014 06:44:00 +0100</pubDate><guid>tag:www.nass3r.com,2014-12-06:computer-science.html</guid><category>computer science</category><category>art</category><category>engineering</category></item><item><title>Docker NuPIC</title><link>http://www.nass3r.com/docker-nupic.html</link><description>&lt;p&gt;&lt;img alt="Docker and NuPIC" src="http://www.nass3r.com/images/docker_nupic.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;span class="caps"&gt;UPDATE&lt;/span&gt;&lt;/em&gt; Right now nupic is available at PyPi and can be simply installed&amp;nbsp;by:&lt;/p&gt;
+&lt;pre class="code bash literal-block"&gt;
+pip install nupic
+&lt;/pre&gt;
 &lt;p&gt;I just set up a docker image that will provide an easy development environment
 for the &lt;a class="reference external" href="https://github.com/numenta/nupic"&gt;NuPIC&lt;/a&gt; project. The image comes with the&amp;nbsp;following:&lt;/p&gt;
 &lt;ul class="simple"&gt;

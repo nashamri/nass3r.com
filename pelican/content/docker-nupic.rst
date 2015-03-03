@@ -10,6 +10,13 @@ Docker NuPIC
 
 |docker_nupic|
 
+*UPDATE* Right now nupic is available at PyPi and can be simply installed by:
+
+.. code:: bash
+
+    pip install nupic
+
+
 I just set up a docker image that will provide an easy development environment
 for the NuPIC_ project. The image comes with the following:
 
